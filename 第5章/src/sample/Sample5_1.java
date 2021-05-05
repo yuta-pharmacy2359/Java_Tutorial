@@ -1,0 +1,12 @@
+package sample;
+
+public class Sample5_1 {
+	public static void main(String[] args) {
+		int n = 10;
+		++n;
+		System.out.println(n);
+
+		--n;
+		System.out.println(n);
+	}
+}
