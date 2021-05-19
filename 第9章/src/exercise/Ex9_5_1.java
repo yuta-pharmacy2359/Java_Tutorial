@@ -11,7 +11,7 @@ public class Ex9_5_1 {
 
 		boolean b1 = a >= 5 && a < 20;
 		boolean b2 = a > b && a < c * 3;
-		boolean b3 = a / 7 == 0 && a / 28 != 0;
+		boolean b3 = a % 7 == 0 && a % 28 != 0;
 		boolean b4 = !(a > b * 7);
 		boolean b5 = !(str.equals("ABC"));
 
