@@ -7,10 +7,12 @@ public class Ex11_4_2 {
 		int fee;
 		if(distance < 7) {
 			fee = 170;
-		} else if(distance >= 12) {
+		} else if(distance < 12) {
 			fee = 200;
-		} else if(distance >= 20) {
+		} else if(distance < 20) {
 			fee = 240;
+		} else if(distance < 28) {
+			fee = 280;
 		} else {
 			fee = 310;
 		}
