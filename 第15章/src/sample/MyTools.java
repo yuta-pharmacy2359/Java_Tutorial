@@ -27,4 +27,12 @@ public class MyTools {
 		}
 		return s;
 	}
+
+	public static void newLine() {
+		System.out.println();
+	}
+
+	public static void stdWeight(double height) {
+		System.out.println("標準体重=" + (height - 100) * 0.9);
+	}
 }
