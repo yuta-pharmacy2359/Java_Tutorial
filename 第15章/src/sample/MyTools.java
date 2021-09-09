@@ -46,4 +46,14 @@ public class MyTools {
 		Arrays.sort(data);
 		return data[data.length - 1];
 	}
+
+	public static int max2(int[] data) {
+		int max = 0;
+		for(int n : data) {
+			if(max < n) {
+				max = n;
+			}
+		}
+		return max;
+	}
 }
