@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Arrays;
+
 public class MyTools {
 	public static double bmi(double weight, double height) {
 		double value = weight / Math.pow(height, 2);
@@ -34,5 +36,14 @@ public class MyTools {
 
 	public static void stdWeight(double height) {
 		System.out.println("標準体重=" + (height - 100) * 0.9);
+	}
+
+	public static int sum(int[] data) {
+		return Arrays.stream(data).sum();
+	}
+
+	public static int max(int[] data) {
+		Arrays.sort(data);
+		return data[data.length - 1];
 	}
 }
