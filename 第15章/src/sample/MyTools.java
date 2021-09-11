@@ -56,4 +56,17 @@ public class MyTools {
 		}
 		return max;
 	}
+
+	public static double triangle(double a) {
+		return Math.sqrt(3) * Math.pow(a, 2) / 4;
+	}
+
+	public static double triangle(double a, double b) {
+		return a * b / 2;
+	}
+
+	public static double triangle(double a, double b, double c) {
+		double s = (a + b + c) / 2;
+		return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+	}
 }
