@@ -69,4 +69,37 @@ public class MyTools {
 		double s = (a + b + c) / 2;
 		return Math.sqrt(s * (s - a) * (s - b) * (s - c));
 	}
+
+	public static double mileToKm(double mile) {
+		double km = mile * 1.609344;
+		return km;
+	}
+
+	public static double kmToMile(double km) {
+		double mile = km / 1.609344;
+		return mile;
+	}
+
+	public static double sd(double[] x) {
+		double avg = Arrays.stream(x).sum() / x.length;
+		double sum = 0;
+		for(int i = 0; i < x.length; i++) {
+			double cal = Math.pow(x[i] - avg, 2);
+			sum += cal;
+		}
+		return Math.sqrt(sum / x.length);
+	}
+
+	public static void graph(int[] ch) {
+		for(int n : ch) {
+			drow(n);
+			newLine();
+		}
+	}
+
+	public static void drow(int n) {
+		for(int i = 0; i < n; i++) {
+			System.out.print("#");
+		}
+	}
 }
