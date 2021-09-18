@@ -1,6 +1,6 @@
 package exercise;
 
-public class Foo5 {
+class Foo5 {
 	protected int n = 10;
 	public void print() {
 		System.out.println(n);
@@ -8,6 +8,7 @@ public class Foo5 {
 }
 
 class Bar5 extends Foo5 {
+	@Override
 	public void print() {
 		System.out.println(2 * n);
 	}
